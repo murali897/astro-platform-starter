@@ -1,50 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-    h1 {
-        @apply text-4xl font-bold tracking-tight sm:text-5xl;
-    }
-
-    h2 {
-        @apply text-2xl font-bold sm:text-3xl;
-    }
-
-    a {
-        @apply underline transition hover:opacity-80;
-    }
-
-    pre {
-        @apply p-6 overflow-x-auto rounded-lg;
-    }
-
-    :not(pre) > code {
-        @apply px-1 py-0.5 font-mono rounded bg-[#1f1f1f] text-[#F67280];
-        font-size: 0.9em;
-    }
-}
-
-@layer components {
-    .markdown > h1,
-    .markdown > h2 {
-        @apply mt-12 mb-6;
-    }
-
-    .markdown > p,
-    .markdown > pre {
-        @apply my-6;
-    }
-
-    .markdown > :first-child {
-        @apply mt-0;
-    }
-
-    .markdown > :last-child {
-        @apply mb-0;
-    }
-
-    .btn:disabled {
-        @apply text-neutral-400 bg-neutral-700;
-    }
-}
+/* src/styles/global.css */
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+nav { background: #4CAF50; padding: 10px; text-align: center; }
+nav a { margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
+header { text-align: center; padding: 20px; background: #4CAF50; color: white; }
+section { margin: 20px; padding: 20px; background: white; box-shadow: 0 2px 5px #ccc; border-radius: 5px; }

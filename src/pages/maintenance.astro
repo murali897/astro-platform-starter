@@ -1,0 +1,15 @@
+/* src/pages/maintenance.astro */
+import Nav from "../components/Nav.astro";
+<html>
+    <body>
+        <Nav />
+        <h2>Maintenance Requests</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="issue">Issue Description:</label>
+            <textarea id="issue" name="issue" required></textarea>
+            <button type="submit">Submit Request</button>
+        </form>
+    </body>
+</html>
