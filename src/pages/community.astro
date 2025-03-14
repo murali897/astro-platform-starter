@@ -1,11 +1,13 @@
 ---
+import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
+
+const title = 'Community Forum';
 ---
 
-<html>
-    <body>
-        <Nav />
-        <h2>Community Forum</h2>
-        <p>Engage with fellow residents, discuss events, and share updates.</p>
-    </body>
-</html>
+<Layout title={title}>
+    <Nav />
+
+    <h2 class="text-2xl font-bold">Community Forum</h2>
+    <p>Engage with fellow residents, discuss events, and share updates.</p>
+</Layout>
